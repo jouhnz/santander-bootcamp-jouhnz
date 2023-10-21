@@ -30,7 +30,7 @@ classDiagram
     - limit: Float
   }
 
-  class Content {
+  class News {
     - icon: String
     - description: String
   }
