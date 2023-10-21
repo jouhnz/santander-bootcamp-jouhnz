@@ -10,7 +10,7 @@ classDiagram
     - account: Account
     - features: Feature[]
     - card: Card
-    - content: Content[]
+    - news: News[]
   }
 
   class Account {
@@ -38,5 +38,5 @@ classDiagram
   User "1" *-- "1" Account
   User "1" *-- "N" Feature
   User "1" *-- "1" Card
-  User "1" *-- "N" Content
+  User "1" *-- "N" News
 ```
