@@ -8,7 +8,7 @@ Java API REST Full criada com base no Bar Bem Brasil, negócio da minha família
   class Cliente {
     -Number id
     -String nome
-    -String bebidas
+    -Bebidas bebidas
   }
 
   class Bebidas {
