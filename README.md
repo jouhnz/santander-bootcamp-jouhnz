@@ -4,39 +4,29 @@ Java API REST Full criada durante o bootcamp da Santander.
 ## Diagrama da classes
 
 ```mermaid
-classDiagram
-  class User {
-    - name: String
-    - account: Account
-    - features: Feature[]
-    - card: Card
-    - news: News[]
+  classDiagram
+  class Cliente {
+    -Number id
+    -String nome
+    -String bebidas
   }
 
-  class Account {
-    - number: String
-    - agency: String
-    - balance: Float
-    - limit: Float
+  class Bebidas {
+    -Number id
+    -String tipo
   }
 
-  class Feature {
-    - icon: String
-    - description: String
+  class ClienteService {
+    -ClienteRepository clienteRepository
   }
+  
+  class ClienteController {
+    -ClienteService clienteService 
+  } 
 
-  class Card {
-    - number: String
-    - limit: Float
-  }
+  Cliente "1" *-- "1..*" Bebidas
+  ClienteService <-- ClienteRepository
+  ClienteController <-- ClienteService
+  Cliente --> ClienteController
 
-  class News {
-    - icon: String
-    - description: String
-  }
-
-  User "1" *-- "1" Account
-  User "1" *-- "N" Feature
-  User "1" *-- "1" Card
-  User "1" *-- "N" News
 ```
