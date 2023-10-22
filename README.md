@@ -1,5 +1,5 @@
 # Santander Bootcamp Java FullStack
-Java API REST Full criada durante o bootcamp da Santander.
+Java API REST Full criada com base no Bar Bem Brasil, negócio da minha família.
 
 ## Diagrama da classes
 
